@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Spices</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0; 
+      }
+      .header {
+        text-align: center;
+        padding: 3px;
+        background-color: #333;
+        position: relative;
+      }
+      .header h1 {
+        color: #f2f2f2;
+      }
+      .navbar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .navbar a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .content-container {
+        flex: 1;
+        padding: 40px;
+        background-color: #ffffff; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+      .content-container h2 {
+        color: #555;
+        margin-top: 0;
+        text-align: center; 
+      }
+      .content-container p {
+        color: #444;
+        text-align: justify;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 1000px; 
+      }
+      .content-container h3 {
+        color: #333;
+        margin-top: 20px;
+        text-align: left; 
+        width: 100%; 
+      }
+      .carousel-section,
+      .andhra-section,
+      .kerala-section,
+      .tamilnadu-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        margin-top: 40px; 
+      }
+      .carousel-container,
+      .andhra-carousel-container,
+      .kerala-carousel-container,
+      .tamilnadu-carousel-container {
+        position: relative;
+        overflow: hidden;
+        width: 800px; 
+        height: 500px; 
+      }
+      .carousel-images,
+      .andhra-carousel-images,
+      .kerala-carousel-images,
+      .tamilnadu-carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 4000px; 
+      }
+      .carousel-images img,
+      .andhra-carousel-images img,
+      .kerala-carousel-images img,
+      .tamilnadu-carousel-images img {
+        width: 800px; 
+        height: 500px; 
+        object-fit: cover; 
+      }
+      .carousel-nav,
+      .andhra-carousel-nav,
+      .kerala-carousel-nav,
+      .tamilnadu-carousel-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+      }
+      .carousel-nav button,
+      .andhra-carousel-nav button,
+      .kerala-carousel-nav button,
+      .tamilnadu-carousel-nav button {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .carousel-nav button:hover,
+      .andhra-carousel-nav button:hover,
+      .kerala-carousel-nav button:hover,
+      .tamilnadu-carousel-nav button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .carousel-content,
+      .andhra-content,
+      .kerala-content,
+      .tamilnadu-content {
+        max-width: 400px; 
+        margin-left: 20px; 
+      }
+      .carousel-content p,
+      .andhra-content p,
+      .kerala-content p,
+      .tamilnadu-content p {
+        margin: 0;
+        line-height: 1.6;
+      }
+      .footer {
+        background-color: #333;
+        color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footer .quick-links,
+      .footer .contact-info {
+        display: inline-block;
+        margin: 0 20px;
+      }
+      .footer .quick-links {
+        text-align: left;
+      }
+      .footer .quick-links a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+      }
+      .footer .quick-links a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .footer .contact-info {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .footer .contact-item {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px; 
+      }
+      .footer .contact-item p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bharat Spices</h1>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="statewise-food.html">StateWise Food</a>
+        <a href="nutricious-food.html">Nutricious Food</a>
+      </div>
+    </div>
+    <div class="content-container">
+      <h2>Indian States and Their Food Items to Awaken Your Taste Buds</h2>
+      <p>
+        India is a land of diverse cultures, and each state boasts its own
+        unique culinary traditions. From the spicy curries of Kerala to the rich
+        biryanis of Hyderabad, every region has something special to offer. The
+        variety of food across the Indian subcontinent is as vast as the
+        country's geography, with each dish reflecting the history, climate, and
+        culture of its region.
+      </p>
+      <p>
+        Whether it's the tangy flavors of Rajasthani cuisine, the
+        coconut-infused dishes from the South, or the hearty meals of Punjab,
+        Indian food is designed to tantalize the taste buds and leave a lasting
+        impression. At Bharat Spices, we bring you the authentic spices that
+        form the backbone of these culinary delights, ensuring that you can
+        recreate the magic of Indian cuisine in your own kitchen.
+      </p>
+      <h3>Maharashtra Cuisine</h3>
+      <div class="carousel-section">
+        <div class="carousel-container">
+          <div class="carousel-images">
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/10/4906487062_16ab748874_z.jpg"
+              alt="Maharashtra Dish 3"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/Maharashtras_Misal_Pav.jpg"
+              alt="Maharashtra Dish 4"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/Modak.jpg"
+              alt="Maharashtra Dish 5"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/Indian_cuisine-Ragda_contained_in_panipuri.jpg"
+              alt="Maharashtra Dish 1"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/10/3437240332_fa336f5efe_z.jpg"
+              alt="Maharashtra Dish 2"
+            />
+          </div>
+          <div class="carousel-nav">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+          </div>
+        </div>
+        <div class="carousel-content">
+          <p>
+            Maharashtrian cuisine offers a rich tapestry of flavors and dishes
+            that reflect the state's diverse landscape. From the bustling
+            streets of Mumbai comes Vada Pav, a spicy potato fritter served in a
+            bun, while the Konkan coast contributes with coconut-rich curries
+            and seafood. Puran Poli, a sweet flatbread stuffed with lentils and
+            jaggery, is a festival favorite, and Misal Pav, a spicy bean curry
+            with crispy toppings, is a beloved street food. Bhakri, a rustic
+            flatbread made from jowar or bajra, complements hearty vegetable
+            curries. Modak, sweet dumplings filled with coconut and jaggery, are
+            a traditional treat during Ganesh Chaturthi. The cuisine's vibrant
+            use of spices and fresh ingredients makes it a unique and flavorful
+            journey.
+          </p>
+        </div>
+      </div>
+
+      <h3>Andhra Cuisine</h3>
+      <div class="andhra-section">
+        <div class="andhra-content">
+          <p>
+            Andhra cuisine is known for its bold and spicy flavors, reflecting
+            the state's rich cultural heritage. Signature dishes include Andhra
+            Chicken Curry, with its fiery spices and tangy flavor, and the
+            aromatic Biryani, a festive rice dish layered with marinated meat
+            and fragrant spices. Pesarattu, a green gram pancake, is a popular
+            breakfast item, while Gongura Pickle, made from sorrel leaves, adds
+            a unique tanginess to meals. Andhra meals often feature a variety of
+            spicy and tangy accompaniments, making each bite a delightful
+            experience. The cuisine's use of fresh local ingredients and vibrant
+            spices offers a taste adventure that is both exciting and
+            satisfying.
+          </p>
+        </div>
+        <div class="andhra-carousel-container">
+          <div class="andhra-carousel-images">
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2016/08/pesarattu-with-upma.jpg"
+              alt="Andhra Dish 1"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2016/08/IMG_0344.jpg"
+              alt="Andhra Dish 2"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2016/08/Vonkaya-kurry-final.jpg"
+              alt="Andhra Dish 3"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2016/08/bobbatlu.jpg"
+              alt="Andhra Dish 4"
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEc7qJdpWkDQCzSacX1Y-pFQAab7qJtz3xqNAxaY1jazx-VDbUAvalGUM0W--7JhPb8g&usqp=CAU"
+              alt="Andhra Dish 5"
+            />
+          </div>
+          <div class="andhra-carousel-nav">
+            <button onclick="prevAndhraSlide()">&#10094;</button>
+            <button onclick="nextAndhraSlide()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <h3>Kerala Cuisine</h3>
+      <div class="kerala-section">
+        <div class="kerala-carousel-container">
+          <div class="kerala-carousel-images">
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/2172142213_9178f0c480_z.jpg"
+              alt="Kerala Dish 1"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/296806262_a0a7ae4921_z.jpg"
+              alt="Kerala Dish 2"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/4779952309_c97d25813a_z.jpg"
+              alt="Kerala Dish 3"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/2173154544_89a252898c_z.jpg"
+              alt="Kerala Dish 4"
+            />
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2015/11/Sadhya.jpg"
+              alt="Kerala Dish 5"
+            />
+          </div>
+          <div class="kerala-carousel-nav">
+            <button onclick="prevKeralaSlide()">&#10094;</button>
+            <button onclick="nextKeralaSlide()">&#10095;</button>
+          </div>
+        </div>
+        <div class="kerala-content">
+          <p>
+            Kerala cuisine is renowned for its rich use of coconut, spices, and
+            fresh seafood. The famous Kerala Sadya is a grand feast featuring a
+            variety of dishes served on a banana leaf, including rice, sambhar,
+            and various side dishes like Avial and Pachadi. Other popular dishes
+            include the spicy Kerala Beef Fry, fragrant Kerala Biryani, and
+            Puttu, a steamed rice cake served with bananas or curry. The use of
+            coconut in different forms—grated, ground, and in coconut milk—is a
+            defining characteristic of this cuisine. Kerala's culinary
+            traditions reflect its vibrant cultural heritage and coastal
+            abundance.
+          </p>
+        </div>
+      </div>
+
+      <h3>Tamil Nadu Cuisine</h3>
+      <div class="tamilnadu-section">
+        <div class="tamilnadu-content">
+          <p>
+            Tamil Nadu cuisine is known for its distinctive flavors and use of
+            spices. Signature dishes include Idli and Sambar, a staple breakfast
+            combination, and Dosa, a crispy rice crepe often enjoyed with
+            various chutneys. Pongal, a savory rice and lentil dish, and Kothu
+            Parotta, a spicy, mixed bread dish, are also popular. The cuisine
+            features a variety of curries, including Chettinad Chicken Curry,
+            which is rich in spices and flavor. Tamil Nadu's cuisine is
+            characterized by its use of tamarind, curry leaves, and mustard
+            seeds to create complex and flavorful dishes.
+          </p>
+        </div>
+        <div class="tamilnadu-carousel-container">
+          <div class="tamilnadu-carousel-images">
+            <img
+              src="https://www.holidify.com/blog/wp-content/uploads/2016/08/bab8f6309e6a0499821461364253e169.jpg"
+              alt="Tamil Nadu Dish 1"
+            />
+            <img
+              src="https://www.holidify.com/images/cmsuploads/compressed/574px-Sweetpongal_20190201180212jpg"
+              alt="Tamil Nadu Dish 2"
+            />
+            <img
+              src="https://shwetainthekitchen.com/wp-content/uploads/2022/01/Idli-Sambar.jpg"
+              alt="Tamil Nadu Dish 3"
+            />
+            <img
+              src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg"
+              alt="Tamil Nadu Dish 4"
+            />
+            <img
+              src="https://www.relishthebite.com/wp-content/uploads/2015/05/Kothuparotta7relishthebite-1024x1024.jpg"
+              alt="Tamil Nadu Dish 5"
+            />
+          </div>
+          <div class="tamilnadu-carousel-nav">
+            <button onclick="prevTamilnaduSlide()">&#10094;</button>
+            <button onclick="nextTamilnaduSlide()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="statewise-food.html">StateWise Food</a>
+        <a href="nutritious-food.html">Nutritious Food</a>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>Contact Us</h3>
+          <p>Shwetha Vennapusa</p>
+          <p>Chennai, India</p>
+          <p>shwethavennapusa@bharatspices.com</p>
+          <p>Phone: +91 7893812398</p>
+        </div>
+        <div class="contact-item">
+          <h3>&nbsp;</h3>
+          
+          <p>Priya Medisetti</p>
+          <p>Chennai, India</p>
+          <p>priyamedisetti@bharatspices.com</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+        <div class="contact-item">
+          <h3>&nbsp;</h3>
+          
+          <p>Prashanth</p>
+          <p>Chennai, India</p>
+          <p>prashanth@bharatspices.com</p>
+          <p>Phone: +91 9123456789</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let currentIndex = 0;
+      const slideWidth = 800; 
+      const slides = document.querySelectorAll(".carousel-images img");
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+        const offset = -index * slideWidth; 
+        document.querySelector(
+          ".carousel-images"
+        ).style.transform = `translateX(${offset}px)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+      }
+
+      
+      showSlide(currentIndex);
+
+      
+      setInterval(nextSlide, 5000); 
+      
+      let andhraIndex = 0;
+      const andhraSlides = document.querySelectorAll(
+        ".andhra-carousel-images img"
+      );
+      const totalAndhraSlides = andhraSlides.length;
+
+      function showAndhraSlide(index) {
+        const offset = -index * slideWidth; 
+        document.querySelector(
+          ".andhra-carousel-images"
+        ).style.transform = `translateX(${offset}px)`;
+      }
+
+      function nextAndhraSlide() {
+        andhraIndex = (andhraIndex + 1) % totalAndhraSlides;
+        showAndhraSlide(andhraIndex);
+      }
+
+      function prevAndhraSlide() {
+        andhraIndex = (andhraIndex - 1 + totalAndhraSlides) % totalAndhraSlides;
+        showAndhraSlide(andhraIndex);
+      }
+
+      
+      showAndhraSlide(andhraIndex);
+
+      
+      setInterval(nextAndhraSlide, 5000); 
+      
+      let keralaIndex = 0;
+      const keralaSlides = document.querySelectorAll(
+        ".kerala-carousel-images img"
+      );
+      const totalKeralaSlides = keralaSlides.length;
+
+      function showKeralaSlide(index) {
+        const offset = -index * slideWidth; 
+        document.querySelector(
+          ".kerala-carousel-images"
+        ).style.transform = `translateX(${offset}px)`;
+      }
+
+      function nextKeralaSlide() {
+        keralaIndex = (keralaIndex + 1) % totalKeralaSlides;
+        showKeralaSlide(keralaIndex);
+      }
+
+      function prevKeralaSlide() {
+        keralaIndex = (keralaIndex - 1 + totalKeralaSlides) % totalKeralaSlides;
+        showKeralaSlide(keralaIndex);
+      }
+
+      
+      showKeralaSlide(keralaIndex);
+
+      
+      setInterval(nextKeralaSlide, 5000); 
+
+      
+      let tamilnaduIndex = 0;
+      const tamilnaduSlides = document.querySelectorAll(
+        ".tamilnadu-carousel-images img"
+      );
+      const totalTamilnaduSlides = tamilnaduSlides.length;
+
+      function showTamilnaduSlide(index) {
+        const offset = -index * slideWidth; 
+        document.querySelector(
+          ".tamilnadu-carousel-images"
+        ).style.transform = `translateX(${offset}px)`;
+      }
+
+      function nextTamilnaduSlide() {
+        tamilnaduIndex = (tamilnaduIndex + 1) % totalTamilnaduSlides;
+        showTamilnaduSlide(tamilnaduIndex);
+      }
+
+      function prevTamilnaduSlide() {
+        tamilnaduIndex =
+          (tamilnaduIndex - 1 + totalTamilnaduSlides) % totalTamilnaduSlides;
+        showTamilnaduSlide(tamilnaduIndex);
+      }
+
+      
+      showTamilnaduSlide(tamilnaduIndex);
+
+      
+      setInterval(nextTamilnaduSlide, 5000); 
+    </script>
+  </body>
+</html>

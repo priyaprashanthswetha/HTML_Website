@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bharat Spices</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        text-align: center;
+        padding: 3px;
+        background-color: #333;
+        position: relative;
+      }
+      .header h1 {
+        color: #f2f2f2;
+      }
+      .navbar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .navbar a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .background-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://wallpapers.com/images/hd/classy-butter-chicken-platter-indian-food-s8a8b9aojk6kqoz0.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+      }
+      .overview-container {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        background-color: #f9f9f9;
+      }
+      .overview-image {
+        flex: 1;
+        margin-right: 20px;
+      }
+      .overview-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .overview-content {
+        flex: 2;
+        color: #333333;
+        text-align: left;
+      }
+      .overview-content h3 {
+        margin-top: 0;
+      }
+      .footer {
+        background-color: #333;
+        color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footer .quick-links,
+      .footer .contact-info {
+        display: inline-block;
+        margin: 0 20px;
+      }
+      .footer .quick-links {
+        text-align: left;
+      }
+      .footer .quick-links a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+      }
+      .footer .quick-links a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .footer .contact-info {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .footer .contact-item {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+      }
+      .footer .contact-item p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bharat Spices</h1>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="statewise-food.html">StateWise Food</a>
+        <a href="nutricious-food.html">Nutricious Food</a>
+      </div>
+    </div>
+    <div class="background-container">
+      <div class="background-image"></div>
+    </div>
+    <div class="overview-container">
+      <div class="overview-image">
+        <img
+          src="https://openthemagazine.com/wp-content/uploads/2020/12/Indiancuisine.jpg"
+          alt="Indian Cuisine"
+        />
+      </div>
+      <div class="overview-content">
+        <h3>What is Bharat Spices?</h3>
+        <p>
+          Bharat Spices is committed to bringing you the finest spices from
+          across India. We source our spices from the best farms and ensure that
+          every product meets our high standards. Our mission is to provide
+          authentic flavors that transform your dishes into culinary
+          masterpieces.
+        </p>
+        <p>
+          We offer a variety of spices, from everyday essentials to exotic
+          blends. Whether you're an amateur cook or a professional chef, our
+          spices are designed to enhance your cooking experience and bring out
+          the best in every meal.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="statewise-food.html">StateWise Food</a>
+        <a href="nutritious-food.html">Nutritious Food</a>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>Contact Us</h3>
+          <p>Shwetha Vennapusa</p>
+          <p>Chennai, India</p>
+          <p>shwethavennapusa@bharatspices.com</p>
+          <p>Phone: +91 7893812398</p>
+        </div>
+        <div class="contact-item">
+          <h3>&nbsp;</h3>
+
+          <p>Priya Medisetti</p>
+          <p>Chennai, India</p>
+          <p>priyamedisetti@bharatspices.com</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+        <div class="contact-item">
+          <h3>&nbsp;</h3>
+
+          <p>Prashanth</p>
+          <p>Chennai, India</p>
+          <p>prashanth@bharatspices.com</p>
+          <p>Phone: +91 9123456789</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

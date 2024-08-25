@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutricious Foods of India</title>
+    <link rel="stylesheet" type="text/css" href="nutri.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bharat Spices</h1>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="statewise-food.html">StateWise Food</a>
+          <a href="nutricious-food.html">Nutricious Food</a>
+        </div>
+    </div>
+<div class = nutricious_foods>
+    <div class="marquee">
+        <marquee id ="mar" height = "100px" direction="down" behavior = "alternate" >Top Indian Foods That Are Super Healthy And Nutricious!</marquee>
+    </div>
+    <div class = "food-container">
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Chana-Masala.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Channa Masala</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a class="card-button" onclick="togglechannaPopup()">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Palak-Sabzi.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Palak Sabzi</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglepalakPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Chicken-Tikka.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Chicken Tikka</h1>
+                <div class="timings">
+                    
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglechickenPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Moong-Dal-Khichdi.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Moong Dal Khichdi</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglemoongPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Prawn-Jalfrezi.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Prawn Jalfrezi</h1>
+                <div class="timings">
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="toggleprawnPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Aloo-Gobi.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Aloo Gobi</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglealooPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Keralan-Fish-Curry.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Keralan Fish Curry</h1>
+                <div class="timings">
+                    
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglefishPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Bhindi-Masala.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Bhindi Masala</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                
+                </div>
+                <a onclick="togglebindiPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Roti-1.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Roti</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="togglerotiPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Raita.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Raita</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    
+                </div>
+                <a onclick="toggleraitaPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Ragi-Dosa.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Ragi Dosa</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="toggleragiPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Kodo-Millet-Pulao.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Kodo Millet Pulao</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    
+                </div>
+                <a href="" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Rasam.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Rasam</h1>
+                <div class="timings">
+                    
+                    <div class="lunch">
+                        <div class="icon">
+                            🌥
+                        </div>
+                        <div>Lunch</div>
+                    </div>
+                    
+                </div>
+                <a onclick="togglerasamPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Idli.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Idli</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="toggleidliPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://karahi-shop.co.uk/wp-content/uploads/Dhokla.jpg.webp" alt="Lights" style="width:100%">
+            <div class="card-content">
+                <h1>Dhokla</h1>
+                <div class="timings">
+                    <div class="break">
+                        <div class="icon">
+                            🌤
+                        </div>
+                        <div>Breakfast</div>
+                    </div>
+                    
+                    <div class="dinner">
+                        <div class="icon">
+                            🌙
+                        </div>
+                        <div>Dinner</div>
+                    </div>
+                </div>
+                <a onclick="toggledholkaPopup()" class="card-button">Read More</a>
+            </div>
+        </div>
+        
+    </div>
+
+   <div class="popup" id="channa-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglechannaPopup()">&times;</div>
+        <h1>Chana Masala</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Chana-Masala.jpg.webp" alt="Lights" style="width:100%">
+        <p>Chana Masala, often known as Chole, is a traditional dish from Northern India and Pakistan. This healthy Indian meal is a chickpea curry cooked in a spicy tomato masala mix of onion, garlic, ginger, chillies and a blend of spices. Chickpeas are high in fibre, contain protein, complex carbohydrates and vitamins such as A, B1 and B6. They also have minerals like iron, copper and zinc.</p>
+    </div>
+   </div>
+   <div class="popup" id="palak-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglepalakPopup()">&times;</div>
+        <h1>Palak Sabzi</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Palak-Sabzi.jpg.webp" alt="Lights" style="width:100%">
+        <p>Palak Sabzi is a dish containing spinach (palak), onions and chilli to provide a quick, tasty and healthy Indian meal or side. Spinach is a superfood packed full of carotenoids such as beta carotene and lutein, which help to support good vision by preventing macular degeneration. It’s also full of iron, which helps you maintain good energy levels.</p>
+    </div>
+   </div>
+   <div class="popup" id="ch-tikka-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglechickenPopup()">&times;</div>
+        <h1>Chicken Tikka</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Chicken-Tikka.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Chicken tikka is one of India’s most popular and well-known dishes – and it’s also one of its healthiest! Marinated in yoghurt, lemon and spice for hours before cooking and then baked in a tandoor oven, chicken tikka is full of flavour, high in protein and low in fat.
+
+            Use an old-fashioned clay tandoor to get a tasty char on the skin, or brush a little oil on the skin if you’re using a grill.</p>
+    </div>
+   </div>
+   <div class="popup" id="moong-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglemoongPopup()">&times;</div>
+        <h1>Moong Dal Khichdi</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Moong-Dal-Khichdi.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Moong dal khichdi is a wholesome and healthy meal prepared with lentils and rice. This gluten-free dinner can be made vegan by using oil instead of ghee and is traditionally made when you are not feeling well because it is not too spicy and easy on the stomach. Flavour comes from the addition of ginger, onion, cumin and asafoetida (hing), which imparts a mild garlic flavour. Pep it up by adding yoghurt and pickle on the side.
+
+            Lentils are high in protein, fibre and folate, and hing is commonly used to aid digestion, as well as being rich in antioxidants.</p>
+    </div>
+   </div>
+   <div class="popup" id="prawn-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="toggleprawnPopup()">&times;</div>
+        <h1>Prawn Jalfrezi
+        </h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Prawn-Jalfrezi.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Jalfrezi is a flavoursome curry of onions, chilli, ginger and garlic served in a tomato-based sauce. A staple in curry houses across the country, Jalfrezi is a solid bet if you’re looking for a lower-calorie option, provided you select a leaner protein source such as prawns. That said, your curry will always be healthier if you prepare it at home because you have control of the amount of oil or ghee being used.</p>
+    </div>
+   </div>
+   <div class="popup" id="aloo-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglealooPopup()">&times;</div>
+        <h1>Aloo Gobi</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Aloo-Gobi.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Aloo Gobi is one of the more popular dishes from Northern India, where cauliflower and potatoes are staples in many homes. As a vegetarian dish, Aloo Gobi is low in calories and high in fibre, making it a perfect side for any meal. Cauliflower is also a fantastic source of antioxidants and contains choline, which supports a healthy metabolism and brain development.</p>
+    </div>
+   </div>
+   <div class="popup" id="fish-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglefishPopup()">&times;</div>
+        <h1>Keralan Fish Curry</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Keralan-Fish-Curry.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>A staple of Keralan cuisine, fish curry is easily one of India’s healthiest meals. There are so many health benefits in cooking and eating ginger and turmeric, which form the base for this curry. Ginger has been used for many years not only as a flavour, but for its natural medicinal uses as an anti-inflammatory.
+
+            Fish curry typically uses either red snapper or sea bass, which are also low-calorie options that lend themselves to healthy cooking.</p>
+    </div>
+   </div>
+   <div class="popup" id="bindi-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglebindiPopup()">&times;</div>
+        <h1>Bhindi Masala</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Bhindi-Masala.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>One of our favourite healthy Indian dishes is bhindi masala. This curry is made from okra, a super-low-calorie vegetable that’s also high in fibre and a good source of protein. It contains less than 50 calories per 100 grams, making it an excellent diet option. Aside from being low in calories, it has good amounts of vitamin C and other nutrients like iron and thiamine.</p>
+    </div>
+   </div>
+   <div class="popup" id="roti-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglerotiPopup()">&times;</div>
+        <h1>Roti</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Roti-1.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>A piece of unleavened flatbread, roti is a staple in many South Asian diets. It’s usually made from wheat flour and can be consumed for breakfast or as a side with your main course at dinner. Rotis are generally low in calories and rich in carbohydrates, so they make an excellent addition to a healthy diet.</p>
+    </div>
+   </div>
+   <div class="popup" id="raita-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="toggleraitaPopup()">&times;</div>
+        <h1>Raita</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Raita.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Raitas are typically made of yoghurt, a healthy source of protein, mixed with cucumber and fresh herbs. Low in unhealthy fats and a good source of B vitamins and minerals, Raitas make an excellent accompaniment to any curry.</p>
+    </div>
+   </div>
+   <div class="popup" id="ragi-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="toggleragiPopup()">&times;</div>
+        <h1>Ragi Dosa</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Ragi-Dosa.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>The Ragi Dosa is a gluten-free, low-fat pancake that is commonly enjoyed at breakfast but works just as well as a side for dinner or lunch. Ragi Dosa’s are made from fermented red millet, a wholegrain rich in niacin and can help reduce cholesterol levels. Use a non-stick tawa pan to reduce the amount of oil required.</p>
+    </div>
+   </div>
+   <div class="popup" id="kodo-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglekodoPopup()">&times;</div>
+        <h1>Kodo Millet Pulao</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Kodo-Millet-Pulao.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Kodo Millet Pulao is a tasty one-pot dish packed with minerals, protein and fibre. Very easy to prepare either in a pressure cooker or on the stovetop, add the millet and veggies of your choice, mix in spices, water and cook.</p>
+    </div>
+   </div>
+   <div class="popup" id="rasam-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglerasamPopup()">&times;</div>
+        <h1>Rasam</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Rasam.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Keep hydrated by drinking a cup of Rasam, which is a South Indian spicy soup made from tamarind, tomatoes and spices. Delicious and concentrated with goodness in the form of vitamin A, C, iron and zinc, as well as magnesium.</p>
+    </div>
+   </div>
+   <div class="popup" id="idli-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="toggleidliPopup()">&times;</div>
+        <h1>Idli</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Idli.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Idli is a healthy Indian dish made from soaked rice and lentils. These soft little cakes are steamed in an idli stand, making them light and fluffy, but you can also steam them in a saucepan if you don’t have an idli stand (this may take longer). Try topping your idlis with coconut chutney or fruit—scrumptious!</p>
+    </div>
+   </div>
+   <div class="popup" id="dholka-popup">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="toggledholkaPopup()">&times;</div>
+        <h1>Dhokla</h1>
+        <img src="https://karahi-shop.co.uk/wp-content/uploads/Dhokla.jpg.webp" alt="Lights" style="width:100%">
+
+        <p>Dhokla is a nutritious, protein-packed snack that can be enjoyed throughout the day. It is made with gram flour (ground chickpea) and steamed to get a fluffy texture. Enjoy it paired with green chutney, made from coriander and chilli.</p>
+    </div>
+   </div>
+
+</div>
+<div class="footer">
+    <div class="quick-links">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="statewise-food.html">StateWise Food</a>
+      <a href="nutritious-food.html">Nutritious Food</a>
+    </div>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Contact Us</h3>
+        <p>Shwetha Vennapusa</p>
+        <p>Chennai, India</p>
+        <p>shwethavennapusa@bharatspices.com</p>
+        <p>Phone: +91 7893812398</p>
+      </div>
+      <div class="contact-item">
+        <h3>&nbsp;</h3>
+        
+        <p>Priya Medisetti</p>
+        <p>Chennai, India</p>
+        <p>priyamedisetti@bharatspices.com</p>
+        <p>Phone: +91 9876543210</p>
+      </div>
+      <div class="contact-item">
+        <h3>&nbsp;</h3>
+        
+        <p>Prashanth</p>
+        <p>Chennai, India</p>
+        <p>prashanth@bharatspices.com</p>
+        <p>Phone: +91 9123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglechannaPopup(){
+        document.getElementById("channa-popup").classList.toggle("active");
+    }
+    function togglepalakPopup(){
+        document.getElementById("palak-popup").classList.toggle("active");
+    }
+    function togglechickenPopup(){
+        document.getElementById("ch-tikka-popup").classList.toggle("active");
+    }
+    function togglemoongPopup(){
+        document.getElementById("moong-popup").classList.toggle("active");
+    }
+    function toggleprawnPopup(){
+        document.getElementById("prawn-popup").classList.toggle("active");
+    }
+    function togglealooPopup(){
+        document.getElementById("aloo-popup").classList.toggle("active");
+    }
+    function togglefishPopup(){
+        document.getElementById("fish-popup").classList.toggle("active");
+    }
+    function togglebindiPopup(){
+        document.getElementById("bindi-popup").classList.toggle("active");
+    }
+    function togglerotiPopup(){
+        document.getElementById("roti-popup").classList.toggle("active");
+    }
+    function toggleraitaPopup(){
+        document.getElementById("raita-popup").classList.toggle("active");
+    }
+    function toggleragiPopup(){
+        document.getElementById("ragi-popup").classList.toggle("active");
+    }
+    function togglekodoPopup(){
+        document.getElementById("kodo-popup").classList.toggle("active");
+    }
+    function togglerasamPopup(){
+        document.getElementById("rasam-popup").classList.toggle("active");
+    }
+    function toggleidliPopup(){
+        document.getElementById("idli-popup").classList.toggle("active");
+    }
+    function toggledholkaPopup(){
+        document.getElementById("dholka-popup").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+
